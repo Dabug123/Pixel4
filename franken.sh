@@ -21,13 +21,13 @@ export LD_LIBRARY_PATH=${HOME}/android/clangop/clang-r365631c/lib64:$LD_LIBRARY_
 DEFCONFIG="floral_defconfig"
 
 # Kernel Details
-VER=".a10"
+VER=".Beta1"
 
 # Paths
 KERNEL_DIR=`pwd`
 REPACK_DIR="${HOME}/android/AnyKernel3"
 PATCH_DIR="${HOME}/android/AnyKernel3/patch"
-ZIP_MOVE="${HOME}/android"
+ZIP_MOVE="${HOME}/android/pixelzip"
 ZIMAGE_DIR="${HOME}/android/pixel4/out/arch/arm64/boot/"
 
 # Functions
