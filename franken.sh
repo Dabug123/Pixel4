@@ -21,7 +21,7 @@ export LD_LIBRARY_PATH=${HOME}/android/clangop/clang-r365631c/lib64:$LD_LIBRARY_
 DEFCONFIG="floral_defconfig"
 
 # Kernel Details
-VER=".a8"
+VER=".a10"
 
 # Paths
 KERNEL_DIR=`pwd`
