@@ -12,16 +12,16 @@ clear
 THREAD="-j$(grep -c ^processor /proc/cpuinfo)"
 KERNEL="Image"
 DTBIMAGE="dtb"
-export CLANG_PATH=~/android/clangop/clang-r365631c/bin/
+export CLANG_PATH=~/android/clang/clang-r370808/bin/
 export PATH=${CLANG_PATH}:${PATH}
 export CLANG_TRIPLE=aarch64-linux-gnu-
 export CROSS_COMPILE=${HOME}/android/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CROSS_COMPILE_ARM32=${HOME}/android/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
-export LD_LIBRARY_PATH=${HOME}/android/clangop/clang-r365631c/lib64:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=${HOME}/android/clang/clang-r370808/lib64:$LD_LIBRARY_PATH
 DEFCONFIG="floral_defconfig"
 
 # Kernel Details
-VER=".QU6.5"
+VER=".QU6.6"
 
 # Paths
 KERNEL_DIR=`pwd`
