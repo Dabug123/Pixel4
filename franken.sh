@@ -21,12 +21,12 @@ export LD_LIBRARY_PATH=${HOME}/android/clang/clang-r370808/lib64:$LD_LIBRARY_PAT
 DEFCONFIG="floral_defconfig"
 
 # Kernel Details
-VER=".RQ9.1"
+VER=".RQ11.2"
 
 # Paths
 KERNEL_DIR=`pwd`
-REPACK_DIR="${HOME}/android/AnyKernel3"
-PATCH_DIR="${HOME}/android/AnyKernel3/patch"
+REPACK_DIR="${HOME}/android/AnyKernel3.1"
+PATCH_DIR="${HOME}/android/AnyKernel3.1/patch"
 ZIP_MOVE="${HOME}/android/pixelzip"
 ZIMAGE_DIR="${HOME}/android/pixel4/out/arch/arm64/boot/"
 
@@ -50,12 +50,12 @@ function make_dtb {
 }
 
 function make_boot {
-		cp -vr ~/android/pixel4/out/arch/arm64/boot/Image.lz4-dtb ~/android/AnyKernel3/Image.lz4-dtb
+		cp -vr ~/android/pixel4/out/arch/arm64/boot/Image.lz4-dtb ~/android/AnyKernel3.1/Image.lz4-dtb
 }
 
 
 function make_zip {
-		cd ~/android/AnyKernel3
+		cd ~/android/AnyKernel3.1
 		zip -r9 `echo $AK_VER`.zip *
 		mv  `echo $AK_VER`.zip $ZIP_MOVE
 		cd $KERNEL_DIR
