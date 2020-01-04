@@ -21,7 +21,7 @@ export LD_LIBRARY_PATH=${HOME}/android/clang/clang-r370808/lib64:$LD_LIBRARY_PAT
 DEFCONFIG="floral_defconfig"
 
 # Kernel Details
-VER=".RQ11.2"
+VER=".RQ12.9.8"
 
 # Paths
 KERNEL_DIR=`pwd`
